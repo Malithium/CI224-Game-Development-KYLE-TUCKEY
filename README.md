@@ -38,8 +38,9 @@ you will also need to change the project settings that allow you to run the libr
         C:\Users\Kyle\Documents\Visual Studio 2013\Projects\VoxelTask\glew-1.11.0\include\GL
         C:\Users\Kyle\Documents\Visual Studio 2013\Projects\VoxelTask\SDL2.0.3\include
         
-5.) next go to linker > Additional Library Directories and again change them to match you current directory curretly
-they are:
+5.) next go to linker > Additional Library Directories and again change them to match you current directory 
+
+    Currently they will be:
       C:\Users\Kyle\Documents\Visual Studio 2013\Projects\VoxelTask\glew-1.11.0\lib\Release MX\Win32
       C:\Users\Kyle\Documents\Visual Studio 2013\Projects\VoxelTask\glew-1.11.0\lib\Release\Win32
       C:\Users\Kyle\Documents\Visual Studio 2013\Projects\VoxelTask\SDL2-2.0.3\lib\x86
