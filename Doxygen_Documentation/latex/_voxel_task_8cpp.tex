@@ -1,0 +1,57 @@
+\hypertarget{_voxel_task_8cpp}{}\section{C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\+Voxel\+Task.cpp File Reference}
+\label{_voxel_task_8cpp}\index{C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\+Voxel\+Task.\+cpp@{C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\+Voxel\+Task.\+cpp}}
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\\*
+{\ttfamily \#include $<$glm.\+hpp$>$}\\*
+{\ttfamily \#include $<$gtx/string\+\_\+cast.\+hpp$>$}\\*
+{\ttfamily \#include $<$gtc/matrix\+\_\+transform.\+hpp$>$}\\*
+{\ttfamily \#include $<$gtx/transform.\+hpp$>$}\\*
+{\ttfamily \#include $<$G\+L/gl.\+h$>$}\\*
+{\ttfamily \#include $<$G\+L/glu.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}load\+Shaders.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}controls.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cube.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_voxel_task_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_voxel_task_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\index{Voxel\+Task.\+cpp@{Voxel\+Task.\+cpp}!main@{main}}
+\index{main@{main}!Voxel\+Task.\+cpp@{Voxel\+Task.\+cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{_voxel_task_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+initialise S\+D\+L
+
+setup the S\+D\+L window, context and event
+
+Problem\+: glew\+Init failed, something is seriously wrong.
+
+Enable depth test
+
+Accept fragment if it closer to the camera than the former one
+
+Cull triangles which normal is not towards the camera
+
+initialises the Cubes buffers
+
+S\+D\+L game loop
+
+binds buffers as well as calls keyboard and mouse input
+
+Draw the cube plane and construct. \begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000001}{Bug}]The cubes are not drawn in the built version of the program They are however drawn in the Visual Studio Debugger, the cause at the moment is not known. \end{DoxyRefDesc}
+
+
+Definition at line 18 of file Voxel\+Task.\+cpp.
+

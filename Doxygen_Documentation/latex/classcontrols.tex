@@ -1,0 +1,96 @@
+\hypertarget{classcontrols}{}\section{controls Class Reference}
+\label{classcontrols}\index{controls@{controls}}
+
+
+{\ttfamily \#include $<$controls.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcontrols_a863dd3b5081bda5fa76c5600f9e56fef}{compute\+Matrices\+From\+Inputs} (S\+D\+L\+\_\+\+Window $\ast$window, S\+D\+L\+\_\+\+Event \&event)
+\item 
+glm\+::mat4 \hyperlink{classcontrols_a55656fed062f5e4e974ad812474521fa}{get\+View\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em This method returns the View\+Matrix as its being changed. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{classcontrols_ada3a547ab60b0288d757107333020f94}{get\+Projection\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em This method returns the Projection\+Matrix as its being changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file controls.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcontrols_a863dd3b5081bda5fa76c5600f9e56fef}{}\index{controls@{controls}!compute\+Matrices\+From\+Inputs@{compute\+Matrices\+From\+Inputs}}
+\index{compute\+Matrices\+From\+Inputs@{compute\+Matrices\+From\+Inputs}!controls@{controls}}
+\subsubsection[{compute\+Matrices\+From\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}void controls\+::compute\+Matrices\+From\+Inputs (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window, }
+\item[{S\+D\+L\+\_\+\+Event \&}]{event}
+\end{DoxyParamCaption}
+)}\label{classcontrols_a863dd3b5081bda5fa76c5600f9e56fef}
+This method handles the various calculations needed in order to make the camera move and look around. store the window sizes in these values
+
+set thes values to hold the cordinates for the screens center
+
+get the time of the last frame
+
+get the time of the current frame
+
+minus the current time by the last time in order to get delta time
+
+get the X and Y position of our mouse
+
+warp the mouse to the center of the screen
+
+disable the cursor so it isnt visible;
+
+calculate the screens new angle
+
+stops the camera from going upside down
+
+detect wether the w,a,s,d keys have been pressed or are being held, and move the camera
+
+set the value of Last\+Time to be current\+Time 
+
+Definition at line 25 of file controls.\+c.
+
+\hypertarget{classcontrols_ada3a547ab60b0288d757107333020f94}{}\index{controls@{controls}!get\+Projection\+Matrix@{get\+Projection\+Matrix}}
+\index{get\+Projection\+Matrix@{get\+Projection\+Matrix}!controls@{controls}}
+\subsubsection[{get\+Projection\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}glm\+::mat4 controls\+::get\+Projection\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcontrols_ada3a547ab60b0288d757107333020f94}
+
+
+This method returns the Projection\+Matrix as its being changed. 
+
+
+
+Definition at line 13 of file controls.\+c.
+
+\hypertarget{classcontrols_a55656fed062f5e4e974ad812474521fa}{}\index{controls@{controls}!get\+View\+Matrix@{get\+View\+Matrix}}
+\index{get\+View\+Matrix@{get\+View\+Matrix}!controls@{controls}}
+\subsubsection[{get\+View\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}glm\+::mat4 controls\+::get\+View\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcontrols_a55656fed062f5e4e974ad812474521fa}
+
+
+This method returns the View\+Matrix as its being changed. 
+
+
+
+Definition at line 8 of file controls.\+c.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\hyperlink{controls_8h}{controls.\+h}\item 
+C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\hyperlink{controls_8c}{controls.\+c}\item 
+C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\hyperlink{controls_8cpp}{controls.\+cpp}\end{DoxyCompactItemize}

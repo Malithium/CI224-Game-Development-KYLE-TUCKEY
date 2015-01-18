@@ -1,0 +1,145 @@
+\hypertarget{class_cube}{}\section{Cube Class Reference}
+\label{class_cube}\index{Cube@{Cube}}
+
+
+{\ttfamily \#include $<$Cube.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cube_af16246e0a4e54ff119e13393c6bab000}{initialise\+Cube} ()
+\item 
+void \hyperlink{class_cube_a7e966b965cb7a6e62f5883a7239a3d8b}{initialise\+Draw} (S\+D\+L\+\_\+\+Window $\ast$window, S\+D\+L\+\_\+\+Event \&S\+D\+Levent)
+\begin{DoxyCompactList}\small\item\em This method generates our cubes buffers. \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a0848c4e700994fad4aa42cb573dcd4d3}{draw\+Construction} ()
+\begin{DoxyCompactList}\small\item\em binds out buffers and sends them to our G\+P\+U \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_aaaf061a108b080549a0cfd21fbca2164}{update} (S\+D\+L\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em stores our cubes into a vector of 4x4 matrices, used to construct the green construct \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a63b168885f4b46f818dcaec902ad2817}{swap\+Buffers} (S\+D\+L\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em updates our S\+D\+L window \end{DoxyCompactList}\item 
+void \hyperlink{class_cube_a6bc54df8a2e5a47026fba5b7a6732db8}{draw\+Plane} ()
+\item 
+void \hyperlink{class_cube_ab5edd4c30271741b1fe001290b7ceb2e}{destroy\+Buffers} ()
+\begin{DoxyCompactList}\small\item\em calls the store\+Platform method and draws our cubes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file Cube.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cube_ab5edd4c30271741b1fe001290b7ceb2e}{}\index{Cube@{Cube}!destroy\+Buffers@{destroy\+Buffers}}
+\index{destroy\+Buffers@{destroy\+Buffers}!Cube@{Cube}}
+\subsubsection[{destroy\+Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::destroy\+Buffers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cube_ab5edd4c30271741b1fe001290b7ceb2e}
+
+
+calls the store\+Platform method and draws our cubes 
+
+destroys our buffers and deletes the program\+I\+D 
+
+Definition at line 270 of file Cube.\+cpp.
+
+\hypertarget{class_cube_a0848c4e700994fad4aa42cb573dcd4d3}{}\index{Cube@{Cube}!draw\+Construction@{draw\+Construction}}
+\index{draw\+Construction@{draw\+Construction}!Cube@{Cube}}
+\subsubsection[{draw\+Construction}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::draw\+Construction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cube_a0848c4e700994fad4aa42cb573dcd4d3}
+
+
+binds out buffers and sends them to our G\+P\+U 
+
+draws our green construction 
+
+Definition at line 231 of file Cube.\+cpp.
+
+\hypertarget{class_cube_a6bc54df8a2e5a47026fba5b7a6732db8}{}\index{Cube@{Cube}!draw\+Plane@{draw\+Plane}}
+\index{draw\+Plane@{draw\+Plane}!Cube@{Cube}}
+\subsubsection[{draw\+Plane}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::draw\+Plane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cube_a6bc54df8a2e5a47026fba5b7a6732db8}
+Draws our red cube plane 
+
+Definition at line 212 of file Cube.\+cpp.
+
+\hypertarget{class_cube_af16246e0a4e54ff119e13393c6bab000}{}\index{Cube@{Cube}!initialise\+Cube@{initialise\+Cube}}
+\index{initialise\+Cube@{initialise\+Cube}!Cube@{Cube}}
+\subsubsection[{initialise\+Cube}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::initialise\+Cube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_cube_af16246e0a4e54ff119e13393c6bab000}
+this is to be used for the color of our plane
+
+this is to be used for the color of our construct
+
+load in the Vertex shader and the fragement shader 
+
+Definition at line 7 of file Cube.\+cpp.
+
+\hypertarget{class_cube_a7e966b965cb7a6e62f5883a7239a3d8b}{}\index{Cube@{Cube}!initialise\+Draw@{initialise\+Draw}}
+\index{initialise\+Draw@{initialise\+Draw}!Cube@{Cube}}
+\subsubsection[{initialise\+Draw}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::initialise\+Draw (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window, }
+\item[{S\+D\+L\+\_\+\+Event \&}]{S\+D\+Levent}
+\end{DoxyParamCaption}
+)}\label{class_cube_a7e966b965cb7a6e62f5883a7239a3d8b}
+
+
+This method generates our cubes buffers. 
+
+Clear the screen
+
+Use our shader
+
+Compute the M\+V\+P matrix from keyboard and mouse input 
+
+Definition at line 176 of file Cube.\+cpp.
+
+\hypertarget{class_cube_a63b168885f4b46f818dcaec902ad2817}{}\index{Cube@{Cube}!swap\+Buffers@{swap\+Buffers}}
+\index{swap\+Buffers@{swap\+Buffers}!Cube@{Cube}}
+\subsubsection[{swap\+Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::swap\+Buffers (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window}
+\end{DoxyParamCaption}
+)}\label{class_cube_a63b168885f4b46f818dcaec902ad2817}
+
+
+updates our S\+D\+L window 
+
+
+
+Definition at line 266 of file Cube.\+cpp.
+
+\hypertarget{class_cube_aaaf061a108b080549a0cfd21fbca2164}{}\index{Cube@{Cube}!update@{update}}
+\index{update@{update}!Cube@{Cube}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Cube\+::update (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window}
+\end{DoxyParamCaption}
+)}\label{class_cube_aaaf061a108b080549a0cfd21fbca2164}
+
+
+stores our cubes into a vector of 4x4 matrices, used to construct the green construct 
+
+updates our window 
+
+Definition at line 258 of file Cube.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\hyperlink{_cube_8h}{Cube.\+h}\item 
+C\+:/\+Users/\+Kyle/\+Documents/\+Visual Studio 2013/\+Projects/\+Voxel\+Task/\+Voxel\+Task/\hyperlink{_cube_8cpp}{Cube.\+cpp}\end{DoxyCompactItemize}
